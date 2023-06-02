@@ -1,0 +1,337 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    display: block;
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+
+}
+
+
+
+#navbar img {
+    padding: 7px 20px;
+    height: 55px;
+    width: 60px;
+}
+
+.item ul {
+    display: flex;
+    margin: 0px 13px;
+
+}
+
+.item ul li {
+
+    list-style: none;
+    font-size: 1.3rem;
+
+
+
+
+}
+
+.item ul li a {
+
+    color: white;
+    /* display: block; */
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    margin: 14px;
+    padding: 7px 24px;
+    font-size: 1.3rem;
+
+
+}
+
+.item ul li a:hover {
+
+    color: black;
+    background-color: white;
+    border-radius: 20px;
+
+}
+
+
+#home {
+    /* color: black; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 600px;
+    /* padding: 3px 200px; */
+}
+
+#home h1 {
+    color: white;
+    font-size: 2.8rem;
+}
+
+#home p {
+    color: white;
+    padding: 37px;
+    font-size: 1.8rem;
+}
+
+
+
+
+
+#home::before {
+
+
+    content: "";
+    background: url('../bg\ image/bg.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 600px;
+    width: 100%;
+    z-index: -1;
+    opacity: .65;
+
+}
+
+.btn {
+    color: white;
+    background-color: rgb(66, 59, 59);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    border: 2px;
+    border-radius: 10px;
+    width: 12%;
+    margin: 7px auto;
+    cursor: pointer;
+    font-size: 1.8rem;
+}
+
+/* Our services */
+
+#services-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+#services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 13px 13px;
+    
+}
+
+#services h1 {
+    /* display: block; */
+    width: 25%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.primary {
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid brown;
+    background-color: rgb(239, 234, 227);
+    border-radius: 12px;
+    margin: 23px;
+    height: 300px;
+    width: 100%;
+}
+
+.primary {
+   width: 30%;
+}
+.primary img {
+    display: block;
+    width: 33%;
+    margin: 23px auto;
+    width: 120px;
+    height: 120px;
+    line-height: 13px;
+    line-height: 24%;
+
+
+}
+
+.primary p{
+    font-size: 23px;
+
+}
+
+/* Client Section */
+
+#client-section::before {
+    content: "";
+    background: url('../bg\ image/bg1.jpg') no-repeat center center / cover;
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    z-index: -1;
+    opacity: .5;
+
+}
+
+#client {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+}
+
+
+
+.client-item img {
+    height: 84px;
+    /* width: 84px; */
+    padding: 53px;
+    margin: 13px 13px;
+
+}
+
+/* Contact */
+
+#contact{
+    /* display: flex; */
+    position: relative;
+    /* height: 300px; */
+    /* font-size: 1.3rem; */
+
+}
+
+#contact::before{
+    content: "";
+    background: url('../Contact\ Us/CT.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+}
+
+#contact-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-item input,
+#contact-item textarea{
+    
+    /* height: 100%; */
+    width: 100%;
+    padding: .4rem;
+    border-radius: 9px;
+    /* border-color: 2px solid rgb(65, 38, 38); */
+    font-size: 1.1rem;
+
+}
+
+#contact-item form{
+    width: 40%;
+    margin: 23px;
+    
+}
+
+#contact-item label{
+    font-size: 1.8rem;
+    
+}
+
+#contact-item input{
+    font-size: 1.3rem;
+    
+}
+
+
+
+
+
+/* #contact-item{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 7px;
+
+
+} */
+
+/* .form-group{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+} */
+
+/* .form-group label,
+.form-group input{
+    display: flex;
+    
+} */
+
+/* #contact-item label,
+#contact-item input{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+} */
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 2px 9px;
+}
+
+
+
+.h-primary {
+    font-size: 2.8rem;
+    padding: 12px;
+    margin-top: 18px;
+    margin-bottom: -15px;
+
+}
+
+.h-secondary {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    padding: 12px;
+    margin-top: -15px;
+
+
+}
+
+.center {
+    text-align: center;
+}
